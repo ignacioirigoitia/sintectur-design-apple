@@ -1,0 +1,16 @@
+.item h4 {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: var(--black);
+}
+
+.item p {
+  font-size: 13px;
+  color: var(--gray);
+  margin-top: 2px;
+}
+
+@media (max-width: 480px) {
+  .item h4 { font-size: 28px; }
+}

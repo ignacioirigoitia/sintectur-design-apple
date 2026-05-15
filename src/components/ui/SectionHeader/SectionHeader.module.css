@@ -1,0 +1,32 @@
+.label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.labelDark { color: #a78bfa; }
+
+.title {
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.08;
+  color: var(--black);
+}
+
+.titleDark { color: #ffffff; }
+
+.sub {
+  margin-top: 14px;
+  font-size: 18px;
+  color: var(--gray);
+  max-width: 560px;
+  line-height: 1.55;
+}
+
+.subCentered { margin: 14px auto 0; }
+
+.subDark { color: rgba(255,255,255,0.5); }

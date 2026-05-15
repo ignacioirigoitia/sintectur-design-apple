@@ -1,0 +1,31 @@
+.section {
+  background: var(--black);
+  color: var(--white);
+  text-align: center;
+  padding: 120px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 50% at 50% 50%, rgba(99,102,241,0.2) 0%, transparent 70%);
+}
+
+.chips {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 48px;
+}
+
+@media (max-width: 768px) {
+  .section { padding: 80px 20px; }
+}
+
+@media (max-width: 480px) {
+  .chips { gap: 8px; }
+}

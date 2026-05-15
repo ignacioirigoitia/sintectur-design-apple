@@ -1,0 +1,50 @@
+.primary {
+  background: var(--accent);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 980px;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.ghost {
+  color: #60a5fa;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ghost::after { content: ' →'; }
+
+.big {
+  background: var(--accent);
+  color: white;
+  padding: 16px 32px;
+  border-radius: 980px;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.bigOutline {
+  border: 1.5px solid var(--accent);
+  color: var(--accent);
+  padding: 16px 32px;
+  border-radius: 980px;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .big,
+  .bigOutline {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
+}
