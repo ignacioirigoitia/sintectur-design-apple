@@ -1,21 +1,20 @@
 import styles from './ServiceCard.module.css'
 
-const COLOR_MAP = {
-  'ic-blue':   styles.icBlue,
-  'ic-purple': styles.icPurple,
-  'ic-green':  styles.icGreen,
-  'ic-amber':  styles.icAmber,
-  'ic-rose':   styles.icRose,
-  'ic-sky':    styles.icSky,
-}
-
-export default function ServiceCard({ icon, iconColor, title, description }) {
+export default function ServiceCard({ title, description, bg, onMouseEnter, onMouseLeave }) {
   return (
-    <div className={styles.card}>
-      <div className={`${styles.icon} ${COLOR_MAP[iconColor] || ''}`}>{icon}</div>
-      <h3>{title}</h3>
-      <p>{description}</p>
-      <a className={styles.link} href="#">Ver más</a>
+    <div
+      className={styles.card}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
+      {/* Fondo: reemplazar bg con url('ruta/foto.jpg') cuando el cliente provea las imágenes */}
+      <div className={styles.bg} style={{ background: bg }} />
+      <div className={styles.overlay} />
+      <div className={styles.content}>
+        <h3 className={styles.title}>{title}</h3>
+        <p className={styles.desc}>{description}</p>
+        <a className={styles.btn} href="#">Explorar</a>
+      </div>
     </div>
   )
 }

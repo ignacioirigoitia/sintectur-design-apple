@@ -8,16 +8,9 @@ export default function Hero() {
         <source src="/Freeman.com-Website-Header-11_2025-v3-1.mp4" type="video/mp4" />
       </video>
 
-      <div className={styles.eyebrow}>Travel &amp; Events — Buenos Aires</div>
-
       <h1 className={styles.title}>
-        Viajes que <em>transforman</em> empresas.
+        Business &amp; Leisure Travel Hub
       </h1>
-
-      <p className={styles.sub}>
-        Diseñamos experiencias de viaje corporativo, MICE e incentivos que conectan personas y
-        potencian resultados.
-      </p>
 
       <div className={styles.btns}>
         <Button variant="primary" href="#">Conocé nuestros servicios</Button>
