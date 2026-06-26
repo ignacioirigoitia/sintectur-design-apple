@@ -7,13 +7,15 @@ import Portfolio from './pages/Portfolio/Portfolio'
 import Inspirate from './pages/Inspirate'
 import Acceder from './pages/Acceder/Acceder'
 import AboutUs from './pages/AboutUs/AboutUs'
+import MeetingsEvents from './pages/MeetingsEvents/MeetingsEvents'
 
 const router = createBrowserRouter([
-  { path: '/',          element: <Home /> },
-  { path: '/portfolio', element: <Portfolio /> },
-  { path: '/inspirate', element: <Inspirate /> },
-  { path: '/acceder',   element: <Acceder /> },
-  { path: '/nosotros',  element: <AboutUs /> },
+  { path: '/',                  element: <Home /> },
+  { path: '/portfolio',         element: <Portfolio /> },
+  { path: '/inspirate',         element: <Inspirate /> },
+  { path: '/acceder',           element: <Acceder /> },
+  { path: '/nosotros',          element: <AboutUs /> },
+  { path: '/meetings-events',   element: <MeetingsEvents /> },
 ])
 
 export default function App() {

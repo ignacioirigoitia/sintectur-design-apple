@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { ChevronDown } from 'lucide-react'
 import styles from './ProductosList.module.css'
 
@@ -17,7 +18,7 @@ const ITEMS = [
     tagline: 'Hitos corporativos con identidad, sin sorpresas.',
     description:
       'La creatividad y la eficiencia presupuestaria pueden ir de la mano. Conocé nuestros productos',
-    links: [{ label: 'Meetings and Events', href: '#' }, { label: 'Incentives Travel', href: '#' }],
+    links: [{ label: 'Meetings and Events', href: '/meetings-events', internal: true }, { label: 'Incentives Travel', href: '#' }],
   },
   {
     number: '03',
@@ -64,7 +65,10 @@ function AccordionItem({ number, title, tagline, description, links, isOpen, onT
             {links.map((l, i) => (
               <span key={l.label} className={styles.linkGroup}>
                 {i > 0 && <span className={styles.sep}>|</span>}
-                <a href={l.href} className={styles.link}>{l.label}</a>
+                {l.internal
+                  ? <Link to={l.href} className={styles.link}>{l.label}</Link>
+                  : <a href={l.href} className={styles.link}>{l.label}</a>
+                }
               </span>
             ))}
           </div>
