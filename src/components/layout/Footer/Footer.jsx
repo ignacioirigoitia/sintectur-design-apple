@@ -9,8 +9,8 @@ const PRODUCTOS = [
   { label: 'Corporate Travel', href: '/corporate-travel', internal: true },
   { label: 'Meetings & Events', href: '/meetings-events', internal: true },
   { label: 'Incentives Travel', href: '/incentives-travel', internal: true },
-  { label: 'Specials Groups', href: '#' },
-  { label: 'Accompanied Trips', href: '#' },
+  { label: 'Specials Groups', href: '/sports-travel', internal: true },
+  { label: 'Accompanied Trips', href: '/viajes-becciu', internal: true },
   { label: 'Argentina Group Experiences', href: '/argentina-experience', internal: true },
 ]
 

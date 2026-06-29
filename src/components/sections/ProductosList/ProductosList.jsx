@@ -26,7 +26,7 @@ const ITEMS = [
     tagline: 'Viajes para estudiantes, deportistas, orquestas, coros y ballets.',
     description:
       'Los viajes con exigencias propias necesitan estructura, coordinación, seguridad y certezas. Para lo complejo y lo específico, una planificación a la altura. Resolvelo todo con nosotros.',
-    links: [{ label: 'Study & Travel', href: '#' }, { label: 'Sports & Travel', href: '#' }, {label: 'Orquestra & Travel', href: '#'}],
+    links: [{ label: 'Study & Travel', href: '/study-travel', internal: true }, { label: 'Sports & Travel', href: '/sports-travel', internal: true }, {label: 'Orquestra & Travel', href: '/orchestra-travel', internal: true}],
   },
   {
     number: '04',

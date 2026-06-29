@@ -15,6 +15,9 @@ import ShipsCruises from './pages/ShipsCruises/ShipsCruises'
 import ViajesBecciu from './pages/ViajesBecciu/ViajesBecciu'
 import TravelExperience from './pages/TravelExperience/TravelExperience'
 import CorporateTravel from './pages/CorporateTravel/CorporateTravel'
+import StudyTravel from './pages/StudyTravel/StudyTravel'
+import SportsTravel from './pages/SportsTravel/SportsTravel'
+import OrchestraTravel from './pages/OrchestraTravel/OrchestraTravel'
 
 function RootLayout() {
   return (
@@ -42,6 +45,9 @@ const router = createBrowserRouter([
       { path: '/viajes-becciu',         element: <ViajesBecciu /> },
       { path: '/travel-experience',     element: <TravelExperience /> },
       { path: '/corporate-travel',      element: <CorporateTravel /> },
+      { path: '/study-travel',          element: <StudyTravel /> },
+      { path: '/sports-travel',         element: <SportsTravel /> },
+      { path: '/orchestra-travel',      element: <OrchestraTravel /> },
     ],
   },
 ])
