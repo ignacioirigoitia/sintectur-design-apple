@@ -3,7 +3,8 @@ import styles from './Footer.module.css'
 import { useModal } from '../../../context/ModalContext'
 
 const EMPRESA = ['Servicios', 'Nuestro Trabajo', 'Inspírate', 'Contacto', 'Carrera']
-const ROUTES = { 'Nuestro Trabajo': '/portfolio' }
+const ROUTES = { 'Nuestro Trabajo': '/portfolio', 'Inspírate': '/inspirate' }
+const HASH_LINKS = { 'Servicios': '/#servicios' }
 const PRODUCTOS = [
   { label: 'Corporate Travel', href: '#' },
   { label: 'Meetings & Events', href: '/meetings-events', internal: true },
@@ -91,6 +92,8 @@ export default function Footer() {
             {EMPRESA.map((item) =>
               MODAL_TRIGGERS[item] ? (
                 <button key={item} onClick={() => openModal(MODAL_TRIGGERS[item])}>{item}</button>
+              ) : HASH_LINKS[item] ? (
+                <a key={item} href={HASH_LINKS[item]}>{item}</a>
               ) : ROUTES[item] ? (
                 <Link key={item} to={ROUTES[item]}>{item}</Link>
               ) : (

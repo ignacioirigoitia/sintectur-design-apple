@@ -11,6 +11,7 @@ import MeetingsEvents from './pages/MeetingsEvents/MeetingsEvents'
 import IncentivesTravel from './pages/IncentivesTravel/IncentivesTravel'
 import ArgentinaExperience from './pages/ArgentinaExperience/ArgentinaExperience'
 import Programas from './pages/Programas/Programas'
+import ShipsCruises from './pages/ShipsCruises/ShipsCruises'
 
 function RootLayout() {
   return (
@@ -34,6 +35,7 @@ const router = createBrowserRouter([
       { path: '/incentives-travel',    element: <IncentivesTravel /> },
       { path: '/argentina-experience', element: <ArgentinaExperience /> },
       { path: '/programas',            element: <Programas /> },
+      { path: '/ships-cruises',        element: <ShipsCruises /> },
     ],
   },
 ])

@@ -58,7 +58,7 @@ export default function Nav() {
         <ul className={styles.mainLinks}>
 
           <li className={styles.mainItem} style={{ '--i': 0 }}>
-            <Link className={styles.menuItem} to="/productos" onClick={closeMenu}>Servicios</Link>
+            <a className={styles.menuItem} href="/#servicios" onClick={closeMenu}>Servicios</a>
           </li>
 
           <li className={styles.mainItem} style={{ '--i': 1 }}>
